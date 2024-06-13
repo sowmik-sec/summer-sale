@@ -169,10 +169,16 @@
             <div class="flex">
               <input
                 type="text"
+                id="coupon"
                 placeholder="Coupon code"
-                class="p-4 box-border rounded-md w-full bg-white text-white border border-gray-400"
+                class="p-4 box-border rounded-md w-full bg-white text-black border border-gray-400"
               />
-              <button class="btn text-white bg-color-primary border-none">
+              <button
+                onclick="applyDiscount()"
+                class="btn text-white bg-color-primary border-none"
+                disabled
+                id="apply"
+              >
                 Apply
               </button>
             </div>
