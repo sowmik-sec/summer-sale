@@ -190,9 +190,38 @@
               Total: <span id="total-amount">0.00</span>TK
             </h3>
             <hr />
-            <button class="btn bg-color-primary text-white w-full border-none">
+            <!-- <button class="btn bg-color-primary text-white w-full border-none">
+              Make Purchase
+            </button> -->
+            <!-- You can open the modal using ID.showModal() method -->
+            <button
+              class="btn bg-color-primary text-white w-full border-none"
+              onclick="my_modal_4.showModal()"
+            >
               Make Purchase
             </button>
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 lg:w-1/2 bg-white">
+                <div
+                  class="flex justify-center items-center flex-col space-y-5"
+                >
+                  <img class="w-36 h-36" src="images/congo.png" alt="" />
+                  <h2 class="text-5xl">Congratulations</h2>
+                  <p>You have purchased the products</p>
+                </div>
+                <div class="flex justify-center mt-6">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button
+                      id="go-home"
+                      class="btn bg-color-primary text-white border-none"
+                    >
+                      Go Home
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
