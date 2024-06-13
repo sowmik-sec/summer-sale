@@ -1,9 +1,10 @@
 let totalPrice = 0;
 let discount = 0;
 let totalAmount = 0;
+const itemDiv = document.getElementById("shopping-items");
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card-item");
-  const itemDiv = document.getElementById("shopping-items");
+
   const ol = document.createElement("ol");
 
   itemDiv.appendChild(ol);
@@ -67,4 +68,5 @@ document.getElementById("go-home").addEventListener("click", () => {
   setValue("total-price", 0);
   setValue("discount", 0);
   setValue("total-amount", 0);
+  itemDiv.innerHTML = "";
 });
